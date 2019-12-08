@@ -59,7 +59,8 @@ public class MainWindow extends javax.swing.JFrame {
     public Connection getConnection() {
         Connection con;
         try {
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo", "root", "googlesack");
+            con = DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/CA6WLzGRoj", "CA6WLzGRoj", "T1cTUvhvce");
+            JOptionPane.showMessageDialog(null, "Connected.");
             return con;
         } catch (final CommunicationsException ce) {
             JOptionPane.showMessageDialog(null, "Unable to connect: Check Your Server");
